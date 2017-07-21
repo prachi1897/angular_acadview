@@ -4,6 +4,11 @@
 		<script src="angular.min.js"></script>
 		<script src="main.js"></script>
 		<title>Angular Functionalities</title>
+		<style>
+		.ng-binding ,ng-scope{
+			border:1px solid black;
+		}
+		</style>
 	</head>
 	<body>
 		<div ng-controller="mainController">
@@ -13,7 +18,7 @@
 		<ul>
 		<li ng-repeat="todo in todos">
 			{{todo}}
-			</li>
-
-
+			<h2>{{todo.title}}</h2>
+			<p>{{todo.details}}</p>
+		</li>
 		</div>

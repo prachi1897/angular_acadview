@@ -22,7 +22,7 @@ ngtodo.controller('mainController',function($scope)
 	},
 	{
 		title:'A movie',
-		details:'movie tickets booked fot tomorrow'
+		details:'movie tickets booked for tomorrow'
 	},
 	]
 		
