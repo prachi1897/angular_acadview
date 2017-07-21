@@ -5,20 +5,29 @@
 		<script src="main.js"></script>
 		<title>Angular Functionalities</title>
 		<style>
-		.ng-binding ,ng-scope{
+		.addborder{
 			border:1px solid black;
+		}
+		.ng-click{
+			display:inline-block;
 		}
 		</style>
 	</head>
 	<body>
 		<div ng-controller="mainController">
-		<input type="text" ng-model="details">
-		<button ng-click="addTodo(details)">Add</button>
+		<input type="text" ng-model="user.title" placeholder="title">
+		<input type="text" ng-model="user.details" placeholder="details">
+		<button ng-click="addTodo(user)">Add</button>
 		<h2>Todo List</h2>
 		<ul>
+		<div class="addborder">
 		<li ng-repeat="todo in todos">
-			{{todo}}
+
 			<h2>{{todo.title}}</h2>
+
 			<p>{{todo.details}}</p>
+		<button ng-click="deleteTodo(todos)">Delete</button>
+			
 		</li>
-		</div>
+		</ul>
+		</div>	
