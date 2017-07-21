@@ -28,8 +28,7 @@ ngtodo.controller('mainController',function($scope)
 		$scope.addTodo=function(user){
 			$scope.todos.push(user);
 		}
-		$scope.deleteTodo=function(title,details){
-			var index=$scope.todos.indexOf(title);
+		$scope.deleteTodo=function(index){
 			$scope.todos.splice(index,1);
 		}
 	
